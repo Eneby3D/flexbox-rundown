@@ -2,7 +2,7 @@
 
 
 body{
-    background-color: limegreen;
+    background-color: rgb(237, 134, 31);
 }
 
 /* header sytles */
@@ -34,13 +34,32 @@ ul {
     margin-left: auto;
 }
 
-li {
+button {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 10px;
     margin: 0px 3px;
-    border: 1px solid limegreen;
+    border: 2px solid black;
     border-radius: 10px;
     background-color: aliceblue;
+    transition-duration: 2s;
+}
+
+button:hover {
+    background-color: gray;
+    color: white;
+}
+
+button:active {
+    background-color: grey;
+    translate: translateY(4px);
+}
+
+img {
+    height: 650px;
+}
+
+h3 {
+    text-align: top;
 }
 
 /* section one flex grow and shrink */
@@ -83,9 +102,11 @@ li {
 /* section 2 center item */
 
 .section-two {
-    background-color: orangered;
+    background-color: pink;
     height: 700px;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* section 3 youtube video */
@@ -93,12 +114,17 @@ li {
 .section-three {
     background-color: lightcoral;
     height: 800px;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
 }
 
 iframe { 
     padding: 5px;
-    
+    width: 560px;
+    height: 315px;
 }
 
 
@@ -106,16 +132,42 @@ iframe {
 
 .section-four {
     background-color: darkslateblue;
-    height: 500px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     
 }
 
 /* section 5 media items */
 
 .section-five {
-    background-color: goldenrod;
+    background-color: rgb(34, 138, 112);
     height: 1400px;
 
 }
 
+.media-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 15px 25px 15px 15px;
+}
 
+.media-container .mediacontent {
+    flex: 1;
+    padding: 10px;
+}
+
+.section-six {
+    background-color: royalblue;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+h2 {
+    font-size: 32px;
+    text-align: center;
+}
